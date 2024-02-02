@@ -169,3 +169,13 @@ document.getElementById('mostrarSeccionBtn2').addEventListener('click', function
 document.getElementById('mostrarSeccionBtn3').addEventListener('click', function () {
   mostrarSeccionPremium('miSeccionComerc3');
 });
+
+
+// notification.js actualiando
+document.addEventListener("DOMContentLoaded", function() {
+  console.log("El evento DOMContentLoaded se ha disparado.");
+  const notificationBar = document.createElement('div');
+  notificationBar.innerHTML = '<p>Estamos trabajando en ello. Regresaremos pronto.</p>';
+  notificationBar.className = 'maintenance-notification';
+  document.body.prepend(notificationBar);
+});
